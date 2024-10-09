@@ -1,0 +1,161 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: slateblue;
+  color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+/* Hero Image Styles */
+.hero-image {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%; /* Changed to 50% for proper circular shape */
+  margin-bottom: 3rem;
+}
+
+/* Body Styles */
+body {
+  background-color: rgb(172, 225, 235);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* About Section */
+.about {
+  padding: 0 150px; /* Simplified padding */
+}
+
+/* Base Info Section */
+.base-info {
+  position: relative; 
+  padding: 3rem; /* Unified padding */
+  overflow: hidden; 
+}
+
+.base-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://thumbs.dreamstime.com/b/green-grass-field-2807003.jpg") center center / cover no-repeat;
+  opacity: 0.6; 
+  z-index: 0; 
+}
+
+.base-info > * {
+  position: relative; 
+  z-index: 1; 
+}
+
+/* Text Styles */
+p {
+  font-weight: bold;
+  line-height: 1.5; /* Improved readability */
+}
+
+.qoutes { /* Corrected to 'quotes' */
+  text-align: center;
+}
+
+/* Form Styles */
+.form-sub {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  gap: 2rem;
+}
+
+/* Home Image Styles */
+.homeimage {
+  max-width: 100%; /* Responsive images */
+  border-radius: 10px; /* Rounded corners for images */
+  margin: 0 auto;
+}
+
+.homeimage p{
+  text-align: center;
+}
+
+/* Headings Styles */
+h1, h2 {
+  color: #333; /* Dark text color */
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s; /* Transition effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Carousel Styles */
+.slick-slide {
+  display: flex; /* Flex to center images */
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  margin: 0 auto;
+}
+
+.slick-dots {
+  bottom: 10px; /* Position dots */
+}
+
+.slick-dots li button:before {
+  color: #007bff; /* Dot color */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff; /* Arrow color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack navbar items on small screens */
+      padding: 1rem; /* Adjust padding */
+  }
+  
+  .about {
+      padding: 0 20px; /* Reduce padding on smaller screens */
+  }
+  
+  .hero-image {
+      width: 80px; /* Smaller hero image on mobile */
+      height: 80px;
+  }
+
+  .form-sub {
+      margin-left: 0; /* Center form on smaller screens */
+  }
+
+  button {
+      width: 100%; /* Full-width buttons on mobile */
+      margin-top: 1rem; /* Space between buttons */
+  }
+}
+
+*{
+  text-align: center;
+}
