@@ -4,11 +4,11 @@ export default function About(props) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch("Reaction/reaction/data.json")
-            .then(res => res.json()) // Fixed: Added parentheses to call the method
-            .then(data => console.log(data))
-            .catch(err => console.error("Error fetching data:", err)); // Added error handling
-    }, []); // Empty dependency array to run only once after the component mounts
+        fetch("/data.json") // Adjusted path to fetch from public folder
+            .then(res => res.json()) // Parse the JSON response
+            .then(data => setData(data)) // Set the fetched data to state
+            .catch(err => console.error("Error fetching data:", err)); // Handle any fetch errors
+    }, []); // Runs only once when the component mounts
 
     return (
         <div className="about">
@@ -30,7 +30,7 @@ export default function About(props) {
                 Through rigorous coding I've found myself to be more disciplined than ever before. I have become passionate about 
                 developing the world by developing apps one code at a time. I never give up when I really want something. You can count on me.
             </h3>
-            {data && <pre>{JSON.stringify(data, null, 2)}</pre>} {/* Display the fetched data */}
+            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : <p>Loading...</p>} {/* Display the fetched data */}
         </div>
     );
 }
