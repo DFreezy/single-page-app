@@ -6,7 +6,7 @@ export default function About(props) {
     useEffect(() => {
         fetch("/data.json") // Adjusted path to fetch from public folder
             .then(res => res.json()) // Parse the JSON response
-            .then(data => setData(data)) // Set the fetched data to state
+            .then(data => console.log(data)) // Set the fetched data to state
             .catch(err => console.error("Error fetching data:", err)); // Handle any fetch errors
     }, []); // Runs only once when the component mounts
 
@@ -30,7 +30,7 @@ export default function About(props) {
                 Through rigorous coding I've found myself to be more disciplined than ever before. I have become passionate about 
                 developing the world by developing apps one code at a time. I never give up when I really want something. You can count on me.
             </h3>
-            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : <p>Loading...</p>} {/* Display the fetched data */}
+            {/* Display the fetched data */}
         </div>
     );
 }
