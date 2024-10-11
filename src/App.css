@@ -15,8 +15,8 @@
 
 /* Hero Image Styles */
 .hero-image {
-  width: 100px; 
-  height: 100px;
+  width: 300px; 
+  height: 300px;
   border-radius: 50%; /* Changed to 50% for proper circular shape */
   margin-bottom: 3rem;
 }

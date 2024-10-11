@@ -20,7 +20,7 @@ export default function About(props) {
                 <p>Frameworks: {props.frameworks}</p>
                 <p>Libraries: {props.libraries}</p>
                 <img 
-                    src="https://th.bing.com/th/id/R.6b4b41280ec740e79fb4af5b5c03e983?rik=4fmIn0wugS5ajg&riu=http%3a%2f%2fwww.dumpaday.com%2fwp-content%2fuploads%2f2017%2f03%2fpictures-14-11.jpg&ehk=BlPjXtdZ11zcqHzqerxJci4U%2bUakPdaH7ybU%2fjXNIq8%3d&risl=&pid=ImgRaw&r=0" 
+                    src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/452195521_1530578321000096_5989762714055245838_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_aid=0&_nc_ohc=oqs433T3aQcQ7kNvgE2vXd0&_nc_ht=scontent-cpt1-1.xx&_nc_gid=A1ZAh0dcywyKqtd-IUk1vxf&oh=00_AYCjy_r7OccSDKfkMjOlKk1ean_nj1az3SLJW_OC9SE1dQ&oe=670EDA13" 
                     className="hero-image" 
                     alt="Hero" 
                 />
