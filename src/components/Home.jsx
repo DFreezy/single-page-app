@@ -61,7 +61,7 @@ export default function Home(props) {
                 {/* Add more slides as needed */}
             </Slider>
 
-            <h1>My desired skills</h1>
+            <h1>My skills</h1>
             <p>Project commits: {props.amount}</p>
             <p>Languages: {props.languages}</p>
             <p>Frameworks: {props.frameworks}</p>
